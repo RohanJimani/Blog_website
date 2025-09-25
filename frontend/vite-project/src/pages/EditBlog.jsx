@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useParams, useNavigate } from "react-router-dom";
-import "../assets/CreateBlog.css";
+// import "../assets/CreateBlog.css";
 
 const EditBlog = () => {
   const { id } = useParams();
