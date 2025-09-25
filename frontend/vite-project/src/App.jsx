@@ -9,7 +9,7 @@ import Stories from "./pages/Stories";
 import BlogDetails from "./pages/BlogDetails";
 import EditBlog from "./pages/EditBlog";
 import Account from "./pages/Account";
-import { RequireAuth } from "./components/RequireAuth";
+
 
 function RequireAuth({ children }) {
   const user = JSON.parse(localStorage.getItem("user"));
