@@ -46,11 +46,11 @@ Repository structure (top-level):
 
 cd .\backend
 # install dependencies if needed
-npm install
-# create a .env file with MONGO_URI and optionally PORT
-# Example .env:
-# MONGO_URI=mongodb://localhost:27017/blogdb
-# PORT=5000
+npm installed
+#create a .env file with MONGO_URI and optionally PORT
+#Example .env:
+#MONGO_URI=mongodb://localhost:27017/blogdb
+#PORT=5000
 npm start
 ```
 
