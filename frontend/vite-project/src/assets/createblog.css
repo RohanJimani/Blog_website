@@ -1,0 +1,207 @@
+/* createBlog */
+/* Background */
+.create-blog-page .bg-gradient-subtle {
+  background: linear-gradient(to right, #f9fafb, #eef2f7);
+  min-height: 100vh;
+  padding: 2rem 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+/* Container */
+.create-blog-page .container {
+  width: 100%;
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 1.5rem;
+}
+
+/* Headings */
+.create-blog-page h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+.create-blog-page p {
+  line-height: 1.6;
+  text-align: center;
+}
+
+/* Buttons */
+.create-blog-page .btn-primary,
+.create-blog-page .btn-outline {
+  background-color: #2563eb;
+  color: #fff;
+  border: none;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  padding: 0.6rem 1rem;
+  font-size: 0.95rem;
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 100px;
+}
+
+.create-blog-page .btn-outline {
+  background-color: transparent;
+  border: 1px solid #d1d5db;
+  color: #374151;
+}
+
+.create-blog-page .btn-primary:hover {
+  background-color: #1d4ed8;
+  transform: translateY(-1px);
+  box-shadow: 0 4px 10px rgba(37, 99, 235, 0.3);
+}
+.create-blog-page .btn-outline:hover {
+  background-color: #f3f4f6;
+  transform: translateY(-1px);
+}
+
+/* Button spacing */
+.create-blog-page .button-group,
+.create-blog-page .flex.gap-2 {
+  display: flex;
+  gap: 1rem; /* adds spacing between buttons */
+  flex-wrap: wrap;
+  margin-top: 1rem; /* 🔹 space above buttons */
+  margin-bottom: 1rem;
+}
+
+
+/* Input fields */
+.create-blog-page input[type="text"],
+.create-blog-page input[type="file"],
+.create-blog-page textarea {
+  width: 100%;
+  border: 1px solid #d1d5db;
+  border-radius: 0.5rem;
+  padding: 1.7rem 1rem;
+  font-size: 1rem;
+  margin-bottom: 1.5rem; /* 🔹 more spacing between inputs */
+  transition: border 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+  background: #fff;
+}
+
+.create-blog-page input:focus,
+.create-blog-page textarea:focus {
+  outline: none;
+  border-color: #2563eb;
+  box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.25);
+}
+
+/* Excerpt box */
+.create-blog-page textarea.excerpt-box {
+  min-height: 180px; /* 🔹 taller excerpt */
+  resize: vertical;
+}
+
+/* Content box */
+.create-blog-page textarea.content-box {
+  min-height: 400px; /* 🔹 larger typing area */
+  resize: vertical;
+}
+
+/* Cards */
+.create-blog-page .bg-white {
+  background-color: #fff;
+}
+.create-blog-page .shadow {
+  box-shadow: 0 6px 10px rgba(0, 0, 0, 0.08);
+}
+.create-blog-page .rounded-lg {
+  border-radius: 0.75rem;
+}
+.create-blog-page .p-6 {
+  padding: 1.75rem;
+}
+
+/* Form Layout */
+.create-blog-page form {
+  display: grid;
+  grid-template-columns: 2fr 1fr; /* better layout */
+  gap: 2rem;
+  width: 100%;
+}
+
+@media (max-width: 1024px) {
+  .create-blog-page form {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Badges (Tags) */
+.create-blog-page .badge {
+  display: inline-flex;
+  align-items: center;
+  font-size: 0.875rem;
+  border-radius: 9999px;
+  padding: 0.4rem 0.8rem;
+  font-weight: 500;
+  cursor: default;
+  background: #eff6ff;
+  color: #1d4ed8;
+  margin-bottom: 0.4rem;
+  transition: all 0.2s ease-in-out;
+}
+.create-blog-page .badge:hover {
+  background: #dbeafe;
+}
+.create-blog-page .badge button {
+  margin-left: 0.4rem;
+  font-size: 1rem;
+  line-height: 1;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  color: #ef4444;
+  font-weight: bold;
+}
+.create-blog-page .badge button:hover {
+  color: #b91c1c;
+}
+
+/* Muted text */
+.create-blog-page .text-muted-foreground {
+  color: #6b7280;
+  font-size: 0.95rem;
+}
+
+/* Preview content */
+.create-blog-page .prose {
+  line-height: 1.8;
+  font-size: 1rem;
+}
+.create-blog-page .prose h1 {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+.create-blog-page .prose p {
+  margin-bottom: 1rem;
+  color: #374151;
+}
+
+/* Extra spacing for sidebar */
+.create-blog-page .space-y-6 > * + * {
+  margin-top: 1.5rem;
+}
+
+/* Responsive paddings */
+@media (max-width: 768px) {
+  .create-blog-page .p-6 {
+    padding: 1.25rem;
+  }
+  .create-blog-page h2 {
+    font-size: 1.5rem;
+  }
+  .create-blog-page .btn-primary,
+  .create-blog-page .btn-outline {
+    width: 100%;
+  }
+}
